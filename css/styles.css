@@ -21,13 +21,17 @@
     gap: 10px;
 }
 
+.gap-20{
+    gap: 20px
+}
+
 .debug{
     border: 1px dashed black;
 }
 /* Generics */
 
 body{
-    padding: 90px;
+    padding: 130px;
     font-family: sans-serif;
 }
 
@@ -42,6 +46,18 @@ ul{
 
 a{
     text-decoration: none;
+}
+
+h2{
+    font-size: 20px;
+    margin-bottom: 1px;
+    text-transform: uppercase;
+}
+
+h3{
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 1px;
 }
 
 /* Header */
@@ -89,4 +105,50 @@ nav a{
 
 .side-nav.left li:hover{
     text-decoration: underline;
+}
+
+/* Main */
+
+.row{
+    margin-bottom: 50px;
+}
+
+.col{
+    flex-basis: calc(100%/3);
+    min-height: 50px;
+}
+
+.card{
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 1px;
+}
+
+.card > img{
+    width: 100%;
+    display: block;
+}
+
+.card .hover-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.card:hover .hover-img{
+    display: block;
+}
+
+.price{
+    font-size: 16px;
+}
+
+.price.normal{
+    text-decoration: line-through;
+}
+
+.price.discounted{
+    font-weight: bold;
+    color: red;
 }
