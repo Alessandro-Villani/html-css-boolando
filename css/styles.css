@@ -152,3 +152,41 @@ nav a{
     font-weight: bold;
     color: red;
 }
+
+.tags{
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+}
+
+.tag{
+    display: inline-block;
+    padding: 5px 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.tag.discount{
+    background-color: red;
+}
+
+.tag.sostenibility{
+    background-color: green;
+}
+
+.favourites{
+    position: absolute;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 40px;
+    right: 0;
+    top: 10px;
+}
+
+.favourites:hover{
+    color: red;
+}
