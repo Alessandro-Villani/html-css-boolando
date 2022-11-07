@@ -136,14 +136,15 @@ nav a{
 }
 
 .card .hover-img{
-    position: absolute;
-    top: 0;
-    left: 0;
     display: none;
 }
 
 .card:hover .hover-img{
     display: block;
+}
+
+.card:hover .base-img{
+    display: none;
 }
 
 .price{
